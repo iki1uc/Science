@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GEN</title>
+<style>
+  body{background:#0d0d0f;color:#00eaff;font-family:monospace;text-align:center;padding-top:40px;}
+  pre{background:#111;padding:20px;border:1px solid:#00eaff;border-radius:4px;display:inline-block;text-align:left;}
+</style>
+</head>
+<body>
+
+<h1>GEN‑STRANG</h1>
+<pre id="out">lade GEN…</pre>
+
+<script type="module">
+import { GEN } from './gen.core.js';
+
+document.getElementById("out").textContent =
+  JSON.stringify(GEN, null, 2);
+</script>
+
+</body>
+</html>
 
