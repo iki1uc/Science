@@ -1,1 +1,13 @@
+scanner:
+  axes:
+    base: 14
+    full: 48
+  modes:
+    - priv
+    - 4all
+    - deep
+  logic:
+    konstrukt: [QI, EVO, UPG, X4, HUND]
+    destrukt: [HÄ, UPD, AH]
+    neutral: [IQ, HA, "777"]
 
