@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>KNOPF‑SYSTEM</title>
-<style>
-  body{background:#0d0d0f;color:#00eaff;font-family:monospace;text-align:center;padding-top:40px;}
-  a{display:inline-block;margin:10px;padding:10px 20px;border:1px solid #00eaff;border-radius:4px;text-decoration:none;color:#00eaff;}
-  pre{background:#111;padding:20px;border:1px solid #00eaff;border-radius:4px;text-align:left;display:inline-block;}
-</style>
+  <meta charset="utf-8">
+  <title>Kandidat Index</title>
 </head>
 <body>
+  <h1>Kandidat: {{respo}}</h1>
+  <p>Base: {{base}}</p>
+  <p>Line: L(n)=3n</p>
+  <p>Instance: I(n)=base+3n</p>
+  <p>Axis: A(n)=floor(n/3)+1</p>
 
-<h1>UNIVERSAL‑KNOPF‑SYSTEM</h1>
-
-<a onclick="go('QI')">QI</a>
-<a onclick="go('EVO')">EVO</a>
-<a onclick="go('UPD')">UPD</a>
-<a onclick="go('HÄ')">HÄ</a>
-<a onclick="go('X4')">X4</a>
-<a onclick="go('HUND')">HUND</a>
-
-<pre id="out">bereit…</pre>
-
-<script type="module">
-import { triggerKnopf } from './js/knopf.engine.js';
-
-window.go = function(name){
-  const data = triggerKnopf(name, Math.random()); // jeder Klick = andere Schärfe
-  document.getElementById("out").textContent =
-    JSON.stringify(data, null, 2);
-};
-</script>
-
+  <a href="id.html">→ zur ID‑Ansicht</a>
 </body>
 </html>
